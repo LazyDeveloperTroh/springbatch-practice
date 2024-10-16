@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: local
+
+
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: mysql
+#  datasource:
+#    hikari:
+#      jdbc-url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8
+#      username: root
+#      password: Loveis12!@
+#      driver-class-name: com.mysql.jdbc.Driver
+#  batch:
+#    jdbc:
+#      initialize-schema: always
+
+---
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Loveis12!@
+    driver-class-name: com.mysql.jdbc.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+
+
